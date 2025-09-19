@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extentreports>
+  <configuration>
+    
+    <!-- Report Name and Metadata -->
+    <reportName>Selenium Hybrid Framework Report</reportName>
+    <documentTitle>Automation Execution Report</documentTitle>
+    <encoding>UTF-8</encoding>
+    <protocol>https</protocol>
+    <timelineEnabled>true</timelineEnabled>
+    <theme>dark</theme> <!-- options: standard | dark -->
+
+    <!-- Chart Settings -->
+    <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+   <!-- top | bottom -->
+
+    <!-- Custom CSS -->
+    <css>
+      .node-name { font-weight: bold; }
+      .category-label { color: #007bff; }
+    </css>
+
+    <!-- Custom JavaScript -->
+    <js>
+      console.log("Extent Report Loaded Successfully!");
+    </js>
+
+   
+
+    <!-- Status Colors -->
+    <status>
+      <fail>red</fail>
+      <error>#ff6347</error>
+      <warning>orange</warning>
+      <skip>yellow</skip>
+      <pass>green</pass>
+      <info>blue</info>
+      <debug>purple</debug>
+    </status>
+
+    <!-- Offline Mode -->
+    <offlineMode>true</offlineMode>
+    <thumbnailForBase64>true</thumbnailForBase64>
+
+  </configuration>
+</extentreports>
