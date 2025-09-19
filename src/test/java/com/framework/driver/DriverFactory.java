@@ -12,7 +12,7 @@ public class DriverFactory {
    }
     public static void initDriver() {
         String browser = ConfigReader.get("browser");
-        boolean headless = Boolean.parseBoolean(ConfigReader.get("headless"));
+        boolean headless = Boolean.parseBoolean(System.getProperty("headless"));
         int implicit = Integer.parseInt(ConfigReader.get("implicitWait"));
 
         if ("chrome".equalsIgnoreCase(browser)) {
@@ -26,10 +26,8 @@ public class DriverFactory {
         getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(implicit));
     }
 
-    public static WebDriver getDriver() {
-    	
-    	
-    	
+    public static WebDriver getDriver() {	
+    	//returns the driver    	
         return driver.get();
     }
 
