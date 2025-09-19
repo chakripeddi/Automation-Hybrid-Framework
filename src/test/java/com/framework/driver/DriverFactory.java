@@ -27,7 +27,7 @@ public class DriverFactory {
     }
 
     public static WebDriver getDriver() {	
-    	    	
+    	//returns the driver    	
         return driver.get();
     }
 
