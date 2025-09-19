@@ -137,7 +137,12 @@
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           <systemProperties>
+          <property>
+                              <name>headless</name>
+	                <value>true</value>
+          </property>
             <property>
+                  
               <name>cucumber.publish.quiet</name>
               <value>true</value>
             </property>
