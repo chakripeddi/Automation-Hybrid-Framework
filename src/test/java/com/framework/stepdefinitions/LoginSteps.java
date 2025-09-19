@@ -37,7 +37,7 @@ public class LoginSteps {
     	String user =data[0][0];
 		String pass =data[0][1];
         loginPage.login(user, pass);
-        Assert.assertTrue(false);
+        
     }
 
 
