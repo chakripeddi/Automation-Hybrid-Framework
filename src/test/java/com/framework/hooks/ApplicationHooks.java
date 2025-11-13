@@ -26,17 +26,13 @@ public class ApplicationHooks {
 
     @Before(order = 1)
     public void startDriver() {
-	
-		
-
     	
         DriverFactory.initDriver();
     }
+    
 @AfterStep
     public void failedcase(Scenario scenario) {
-	WebDriver driver= DriverFactory.getDriver();
-	
-		
+	WebDriver driver= DriverFactory.getDriver();		
 		
 		byte[] bytee= ScreenshotUtil.takeScreenshot(driver);
 		

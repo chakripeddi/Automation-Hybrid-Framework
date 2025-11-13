@@ -25,8 +25,7 @@ public class LoginSteps {
 
     @Given("user is on login page")
     public void user_is_on_login_page() {
-        driver = DriverFactory.getDriver();
-        loginPage = new LoginPage(driver, waitTime);
+             loginPage = new LoginPage(driver, waitTime);
         loginPage.goTo(ConfigReader.get("baseUrl"));
     }
 

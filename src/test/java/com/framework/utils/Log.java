@@ -9,6 +9,8 @@ import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 public class Log {
 	Logger logger = LogManager.getLogger(Log.class);
 	
+	public void logExample() {
+	 logger.info("This is an info message");}
 
     public static void logInfo(String message) {
         ExtentCucumberAdapter.getCurrentStep().log(Status.INFO, message);
@@ -25,8 +27,10 @@ public class Log {
     }
 
     public static void logFail(String message) {
-        ExtentCucumberAdapter.getCurrentStep().log(Status.FAIL, message);
+      
     }
 }
+
+
 
 

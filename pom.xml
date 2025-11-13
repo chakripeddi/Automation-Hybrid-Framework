@@ -23,14 +23,14 @@
   </properties>
 
   <dependencies>
-    <!-- Selenium -->
+		<!-- Selenium -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>${selenium.version}</version>
     </dependency>
 
-    <!-- TestNG -->
+		<!-- TestNG -->
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
@@ -38,7 +38,7 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Cucumber -->
+		<!-- Cucumber -->
     <dependency>
       <groupId>io.cucumber</groupId>
       <artifactId>cucumber-java</artifactId>
@@ -58,14 +58,14 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- WebDriverManager -->
+		<!-- WebDriverManager -->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
       <version>${webdrivermanager.version}</version>
     </dependency>
 
-    <!-- Excel: Apache POI -->
+		<!-- Excel: Apache POI -->
     <dependency>
       <groupId>org.apache.poi</groupId>
       <artifactId>poi</artifactId>
@@ -77,13 +77,13 @@
       <version>${poi.version}</version>
     </dependency>
 
-    <!-- Extent Reports -->
+		<!-- Extent Reports -->
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
       <version>${extentreports.version}</version>
     </dependency>
-    <!-- Extent Cucumber Adapter -->
+		<!-- Extent Cucumber Adapter -->
     <dependency>
       <groupId>tech.grasshopper</groupId>
       <artifactId>extentreports-cucumber7-adapter</artifactId>
@@ -91,8 +91,8 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- Logging -->
-    <!-- Log4j2 API + Core -->
+		<!-- Logging -->
+		<!-- Log4j2 API + Core -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-api</artifactId>
@@ -105,7 +105,7 @@
     <version>2.22.1</version>
 </dependency>
 
-<!-- Bridge SLF4J to Log4j2 -->
+		<!-- Bridge SLF4J to Log4j2 -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-slf4j-impl</artifactId>
@@ -138,11 +138,10 @@
           </suiteXmlFiles>
           <systemProperties>
           <property>
-                              <name>headless</name>
+                    <name>headless</name>
 	                <value>true</value>
           </property>
-            <property>
-                  
+            <property>                  
               <name>cucumber.publish.quiet</name>
               <value>true</value>
             </property>
